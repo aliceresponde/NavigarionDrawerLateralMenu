@@ -1,0 +1,88 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_margin="20dp"
+              android:orientation="vertical"
+              tools:context="com.example.aliceresponde.defaultlateralmenu.QuickSearchFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Property"
+        android:textColor="@android:color/holo_blue_light"
+        android:textSize="20sp"
+        />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gray_frame"
+        >
+
+        <EditText
+            android:id="@+id/et_property_id"
+            android:singleLine="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_toLeftOf="@+id/imageV_search_property"
+            android:layout_toStartOf="@+id/imageV_search_property"
+            android:hint="Address or Radar ID"
+            android:padding="10dp"
+            android:textSize="18sp"/>
+
+        <ImageView
+            android:id="@+id/imageV_search_property"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignBottom="@+id/et_property_id"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/quick_search_icon"
+            android:tint="@android:color/holo_blue_light"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Owner"
+        android:textColor="@android:color/holo_blue_light"
+        android:textSize="20sp"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gray_frame"
+        >
+
+        <EditText
+            android:id="@+id/et_owner"
+            android:singleLine="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_toLeftOf="@+id/imageV_search_owner"
+            android:layout_toStartOf="@+id/imageV_search_owner"
+            android:hint="Last, First or Company"
+            android:padding="10dp"
+            android:textSize="18sp"/>
+
+        <ImageView
+            android:id="@+id/imageV_search_owner"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/et_owner"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/quick_search_icon"
+            android:tint="@android:color/holo_blue_light"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:layout_margin="20dp"
+             tools:context="com.example.aliceresponde.defaultlateralmenu.MyListFragment">
+
+    <ListView
+        android:id="@+id/listV_my_lists"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:background="@drawable/gray_frame"
+        android:visibility="gone"
+        >
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/ll_add_list"
+        android:layout_marginTop="15dp"
+        android:paddingBottom="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="create_new_list"
+        android:background="@drawable/gray_frame"
+        android:gravity="center_horizontal"
+        android:padding="10dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Make a List"
+            android:textSize="28sp"
+            android:gravity="center_horizontal"
+            android:textColor="@android:color/holo_blue_light"
+            />
+        <TextView
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Harness the power of list to gain insights into your target market"
+            />
+
+        <ImageView
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/circle_pluss"
+            />
+
+
+
+    </LinearLayout>
+    
+
+</LinearLayout>
